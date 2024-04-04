@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+    <style>
+      /* SELETORES PERSONALIZADOS
+
+         #  =  id
+         .  =  class
+         :  =  pseudo-class
+         :: = pseudo-elementos
+         >  = children 'filho'
+      */
+      *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      a{
+        color: darkblue;
+        text-decoration: none;
+      }
+      a:visited{/*pseudo-classe quando for visitado*/
+        color: blue;
+      }
+      a:hover{/*pseudo-classe quando passar o mouse*/
+        color: #000;
+        text-decoration: underline;
+        font-size: 30px;
+      }
+
+      a:active{/*pseudo-classe quando clicar no link*/
+        color: darkslategrey;
+      }
+      .especial:hover{
+        background-color: aqua;
+      }
+      .especial::before{/*os :: dois pontos assim sginifica que é um pseudo-elemendo esse diz before->antes */
+        content: '👨‍💻';
+      }
+      .especial::after{
+        content: '👨‍💻';
+      }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul type="none">
+      <li><a href="https://github.com/gustavoguanabara">Repositorio Github</a></li>
+      <li><a href="https://www.youtube.com/@CursoemVideo" class="especial">Canal do YouTube</a></li>
+      <li><a href="https://www.cursoemvideo.com" class="especial">Site do Curso em video</a></li>
+    </ul>
+</body>
+</html>
