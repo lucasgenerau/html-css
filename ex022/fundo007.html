@@ -7,21 +7,25 @@
     <style>
       section#container{
         position: relative;
-        height: 94vh;
+        height: 93vh;
         padding: 10px;
         background-color: gray;
-       
+        background-image: url(imagens/target001.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
       }
 
       article#conteudo{
-        height: 280px;
-        max-width: 360px;
+        position: absolute;
+        height: 220px;
+        width: 300px;
+        left: 50%;
+        top: 50%;
         border: 1px solid black;
-        border-radius: 10px;
-        background: gainsboro url(imagens/mascote-html5.png) center center no-repeat;
-       
-        background-size: contain;
-        margin: auto;
+        background: gainsboro url(imagens/target001.png) center center no-repeat;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        transform: translate(-50%, -50%);
 
       }
     </style>
