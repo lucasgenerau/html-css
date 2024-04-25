@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aprendendo tabelas 2º</title>
     <style>
-      td{
-        border: 1px solid black;
+      table{
+        width: 400px;
         border-collapse: collapse;
+      }
+      
+      thead, tfoot{
+        background-color: darkgray;
+      }
+
+      td, th{
+        border: 1px solid black;
+        padding: 10px;
       }
     </style>
 </head>
@@ -25,11 +34,20 @@
       <tbody>
           <tr>
               <td>São Paulo</td>
-              <td></td>
+              <td>44.420.459</td>
           </tr>
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
+          <tr>
+              <td>Minas Gerais</td>
+              <td>20.547.217</td>
+          </tr>
+          <tr>
+              <td>Rio de Janeiro</td>
+              <td>6.054.524</td>
+          </tr>
+          <tr>
+             <td>Bahia</td>
+             <td>14.136.417</td>
+          </tr>
           <tr></tr>
           <tr></tr>
           <tr></tr>
@@ -39,7 +57,10 @@
       </tbody>
 
       <tfoot>
-          <tr></tr>
+          <tr>
+              <th>Total de habitantes</th>
+              <td>000000000</td>
+          </tr>
       </tfoot>
     </table>
 </body>
